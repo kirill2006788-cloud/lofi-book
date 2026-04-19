@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина — Lofi Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">📖 Lofi Book</div>
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Главная</a>
+                <a href="books.html" class="nav__link">Книги</a>
+                <a href="audiobooks.html" class="nav__link">Аудиокниги</a>
+                <a href="new.html" class="nav__link">Новинки</a>
+                <a href="sets.html" class="nav__link">Наборы</a>
+                <a href="about.html" class="nav__link">О нас</a>
+                <a href="reviews.html" class="nav__link">Отзывы</a>
+                <a href="cart.html" class="nav__link">🛒 Корзина</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <div class="container">
+            <h1 class="section-title">🛒 Твоя корзина</h1>
+            
+            <div id="cart-container">
+                <div id="cart-items"></div>
+                <div id="cart-total"></div>
+                <button id="checkout-btn" class="btn btn--primary">Оформить заказ →</button>
+                <button id="clear-cart-btn" class="btn" style="background:none; border:1px solid var(--neon-purple); margin-left:15px;">Очистить корзину</button>
+            </div>
+            
+            <a href="index.html" class="back-btn" style="display:block; margin-top:30px;">← Продолжить покупки</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">© 2026 Lofi Book 🧸</div>
+    </footer>
+
+    <!-- Плавающая корзина -->
+    <div class="floating-cart" id="floatingCart">
+        <a href="cart.html" class="cart-icon">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+        </a>
+    </div>
+
+    <script src="cart.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

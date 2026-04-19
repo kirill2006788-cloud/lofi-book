@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы — Lofi Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">📖 Lofi Book</div>
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Главная</a>
+                <a href="books.html" class="nav__link">Книги</a>
+                <a href="audiobooks.html" class="nav__link">Аудиокниги</a>
+                <a href="new.html" class="nav__link">Новинки</a>
+                <a href="sets.html" class="nav__link">Наборы</a>
+                <a href="about.html" class="nav__link">О нас</a>
+                <a href="reviews.html" class="nav__link">Отзывы</a>
+                <a href="reviews.html" class="nav__link">Отзывы</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="reviews-page">
+        <div class="container">
+            <h1 class="section-title">💬 Отзывы читателей</h1>
+            
+            <!-- Блок "Оставить отзыв" + "Почему нас рекомендуют" -->
+            <div class="reviews__action">
+                
+                <!-- Форма отправки отзыва -->
+                <div class="review__form-block">
+                    <h3>✍️ Оставить отзыв</h3>
+                    <form id="reviewForm">
+                        <div class="form-group">
+                            <input type="text" id="reviewName" placeholder="Твоё имя" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="reviewText" rows="3" placeholder="Поделись впечатлениями о книгах или сайте..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <select id="reviewRating">
+                                <option value="5">⭐⭐⭐⭐⭐ — Восхитительно</option>
+                                <option value="4">⭐⭐⭐⭐ — Очень хорошо</option>
+                                <option value="3">⭐⭐⭐ — Хорошо</option>
+                                <option value="2">⭐⭐ — Нормально</option>
+                                <option value="1">⭐ — Не очень</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Отправить отзыв →</button>
+                    </form>
+                    <p class="form-note">Все отзывы проходят модерацию. Спасибо за тёплые слова ❤️</p>
+                </div>
+
+                <!-- Блок "Почему нас рекомендуют" -->
+                <div class="review__why">
+                    <h3>🌟 Почему нас рекомендуют?</h3>
+                    <ul>
+                        <li>📖 Уютные подборки под настроение</li>
+                        <li>🎧 Аудиокниги с атмосферой</li>
+                        <li>🎵 Бесплатные lofi-плейлисты</li>
+                        <li>🧸 Наборы «Уютный вечер»</li>
+                        <li>💬 Поддержка и забота о читателях</li>
+                    </ul>
+                    <div class="review__why-quote">
+                        <p>«Чтение под lofi — это как обнимашки для души»</p>
+                        <em>— Алиса, основательница</em>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Список уже добавленных отзывов -->
+            <div class="reviews__list" id="reviewsList">
+                <h2>📌 Что говорят наши читатели</h2>
+                <div class="reviews__grid">
+                    
+                    <!-- Отзыв 1 -->
+                    <div class="review__card">
+                        <div class="review__avatar">👧🏻</div>
+                        <div class="review__stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review__text">«Lofi Book — это моё уютное место. Теперь читаю под джаз, а книги под настроение — просто находка!»</p>
+                        <p class="review__author">— Аня, 23 года</p>
+                    </div>
+
+                    <!-- Отзыв 2 -->
+                    <div class="review__card">
+                        <div class="review__avatar">🧑🏼</div>
+                        <div class="review__stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review__text">«Наконец-то нашёл сайт, где книги не просто продают, а создают атмосферу. Плейлисты отдельное спасибо!»</p>
+                        <p class="review__author">— Дима, 27 лет</p>
+                    </div>
+
+                    <!-- Отзыв 3 -->
+                    <div class="review__card">
+                        <div class="review__avatar">👩🏽</div>
+                        <div class="review__stars">⭐⭐⭐⭐</div>
+                        <p class="review__text">«Слушала аудиокнигу «1984» под lofi — это было невероятно. Качество отличное, голос приятный.»</p>
+                        <p class="review__author">— Катя, 21 год</p>
+                    </div>
+
+                    <!-- Отзыв 4 -->
+                    <div class="review__card">
+                        <div class="review__avatar">🧸</div>
+                        <div class="review__stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review__text">«Набор «Уютный вечер» — лучшее, что я покупал в этом году. Книга, аудиокнига и свеча создали магию.»</p>
+                        <p class="review__author">— Макс, 24 года</p>
+                    </div>
+
+                    <!-- Отзыв 5 -->
+                    <div class="review__card">
+                        <div class="review__avatar">🌸</div>
+                        <div class="review__stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review__text">«Обожаю подборку по настроению. Когда грустно — «Книжный вор» спасает. Спасибо за такой тёплый проект!»</p>
+                        <p class="review__author">— Лена, 22 года</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="index.html" class="btn btn--primary back-btn">← На главную</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>© 2026 Lofi Book — книги и аудиокниги под настроение 🧸</p>
+            <div class="footer__contacts">
+                <p>📱 Наш Telegram-бот: <a href="https://t.me/lofi_book_bot" target="_blank">@lofi_book_bot</a></p>
+                <p>📧 Поддержка: <a href="mailto:hello@lofibook.ru">hello@lofibook.ru</a></p>
+                <p>🌐 Наш сайт: <a href="https://lofibook.ru" target="_blank">lofibook.ru</a></p>
+                <p>💬 Вопросы и пожелания — всегда на связи ✨</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+
+    <script>
+        // Обработка отправки нового отзыва
+        document.getElementById('reviewForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('reviewName').value;
+            const text = document.getElementById('reviewText').value;
+            const ratingSelect = document.getElementById('reviewRating');
+            const ratingValue = ratingSelect.value;
+            
+            let stars = '';
+            if (ratingValue === '5') stars = '⭐⭐⭐⭐⭐';
+            else if (ratingValue === '4') stars = '⭐⭐⭐⭐';
+            else if (ratingValue === '3') stars = '⭐⭐⭐';
+            else if (ratingValue === '2') stars = '⭐⭐';
+            else stars = '⭐';
+            
+            if (name && text) {
+                alert(`📖 Lofi Book\n\nСпасибо, ${name}! Твой отзыв отправлен на модерацию ✨`);
+                this.reset();
+            } else {
+                alert(`📖 Lofi Book\n\nПожалуйста, заполни имя и текст отзыва 😊`);
+            }
+        });
+    </script>
+
+</body>
+</html>

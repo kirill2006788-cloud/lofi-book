@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наборы — Lofi Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">📖 Lofi Book</div>
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Главная</a>
+                <a href="books.html" class="nav__link">Книги</a>
+                <a href="audiobooks.html" class="nav__link">Аудиокниги</a>
+                <a href="new.html" class="nav__link">Новинки</a>
+                <a href="sets.html" class="nav__link">Наборы</a>
+                <a href="about.html" class="nav__link">О нас</a>
+                <a href="reviews.html" class="nav__link">Отзывы</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="catalog">
+        <div class="container">
+            <h1 class="section-title">🎁 Наборы «Уютный вечер»</h1>
+            <div class="catalog__grid">
+                
+                <div class="catalog__card">
+                    <div class="catalog__icon">📖🎧</div>
+                    <h3>Классика</h3>
+                    <p>«1984» книга + аудиокнига + плейлист</p>
+                    <span class="old-price">698 ₽</span>
+                    <span class="price">599 ₽</span>
+                    <button class="add-to-cart" data-name="Набор Уютный вечер: Классика" data-price="599">Выбрать →</button>
+                </div>
+
+                <div class="catalog__card">
+                    <div class="catalog__icon">📖🎧</div>
+                    <h3>Фэнтези-хит</h3>
+                    <p>«Четвёртое крыло» книга + аудиокнига</p>
+                    <span class="old-price">998 ₽</span>
+                    <span class="price">799 ₽</span>
+                    <button class="add-to-cart" data-name="Набор Уютный вечер: Фэнтези-хит" data-price="799">Выбрать →</button>
+                </div>
+
+                <div class="catalog__card">
+                    <div class="catalog__icon">📖🎧</div>
+                    <h3>Детектив</h3>
+                    <p>«Книжный вор» + аудиокнига + свеча</p>
+                    <span class="old-price">848 ₽</span>
+                    <span class="price">699 ₽</span>
+                    <button class="add-to-cart" data-name="Набор Уютный вечер: Детектив" data-price="699">Выбрать →</button>
+                </div>
+
+            </div>
+            <a href="index.html" class="btn btn--primary back-btn">← На главную</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container"> 2026 Lofi Book 🧸</div>
+    </footer>
+
+    <div class="floating-cart" id="floatingCart">
+        <a href="cart.html" class="cart-icon">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+        </a>
+    </div>
+
+    <script src="cart.js"></script>
+    <script src="menu.js"></script>
+
+</body>
+</html>

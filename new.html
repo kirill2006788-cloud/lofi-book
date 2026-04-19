@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новинки — Lofi Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">📖 Lofi Book</div>
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Главная</a>
+                <a href="books.html" class="nav__link">Книги</a>
+                <a href="audiobooks.html" class="nav__link">Аудиокниги</a>
+                <a href="new.html" class="nav__link">Новинки</a>
+                <a href="sets.html" class="nav__link">Наборы</a>
+                <a href="about.html" class="nav__link">О нас</a>
+                <a href="reviews.html" class="nav__link">Отзывы</a>
+                <a href="cart.html" class="nav__link">🛒 Корзина</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="catalog">
+        <div class="container">
+            <h1 class="section-title">🔥 Новинки со скидкой 20%</h1>
+            <div class="catalog__grid">
+                
+                <!-- 1. Четвёртое крыло -->
+                <div class="catalog__card">
+                    <div class="catalog__image">
+                        <img src="images/fourthwing.jpg" alt="Четвёртое крыло" onerror="this.src='https://placehold.co/150x220/1a1a3a/c084fc?text=🔥'">
+                    </div>
+                    <h3>«Четвёртое крыло»</h3>
+                    <p>Ребекка Яррос</p>
+                    <span class="old-price">499 ₽</span>
+                    <span class="price">399 ₽</span>
+                    <button class="add-to-cart" data-name="Четвёртое крыло" data-price="399">Купить →</button>
+                </div>
+
+                <!-- 2. Твоё сердце будет разбито -->
+                <div class="catalog__card">
+                    <div class="catalog__image">
+                        <img src="images/heart.jpg" alt="Твоё сердце будет разбито" onerror="this.src='https://placehold.co/150x220/1a1a3a/c084fc?text=💔'">
+                    </div>
+                    <h3>«Твоё сердце будет разбито»</h3>
+                    <p>Анна Джейн</p>
+                    <span class="old-price">549 ₽</span>
+                    <span class="price">439 ₽</span>
+                    <button class="add-to-cart" data-name="Твоё сердце будет разбито" data-price="439">Купить →</button>
+                </div>
+
+                <!-- 3. По осколкам твоего сердца -->
+                <div class="catalog__card">
+                    <div class="catalog__image">
+                        <img src="images/shattered.jpg" alt="По осколкам твоего сердца" onerror="this.src='https://placehold.co/150x220/1a1a3a/c084fc?text=💔'">
+                    </div>
+                    <h3>«По осколкам твоего сердца»</h3>
+                    <p>Анна Джейн</p>
+                    <span class="old-price">549 ₽</span>
+                    <span class="price">439 ₽</span>
+                    <button class="add-to-cart" data-name="По осколкам твоего сердца" data-price="439">Купить →</button>
+                </div>
+
+                <!-- 4. Железное пламя -->
+                <div class="catalog__card">
+                    <div class="catalog__image">
+                        <img src="images/ironflame.jpg" alt="Железное пламя" onerror="this.src='https://placehold.co/150x220/1a1a3a/c084fc?text=⚡'">
+                    </div>
+                    <h3>«Железное пламя»</h3>
+                    <p>Ребекка Яррос</p>
+                    <span class="old-price">599 ₽</span>
+                    <span class="price">479 ₽</span>
+                    <button class="add-to-cart" data-name="Железное пламя" data-price="479">Купить →</button>
+                </div>
+
+            </div>
+            <a href="index.html" class="btn btn--primary back-btn">← На главную</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">© 2026 Lofi Book 🧸</div>
+    </footer>
+
+    <!-- Плавающая корзина -->
+    <div class="floating-cart" id="floatingCart">
+        <a href="cart.html" class="cart-icon">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+        </a>
+    </div>
+
+    <script src="cart.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
